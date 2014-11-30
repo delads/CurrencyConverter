@@ -1,0 +1,22 @@
+<TableLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:background="#ffffff"
+	android:stretchColumns="1"
+	android:shrinkColumns="1"
+	android:layout_span="3">
+
+	<TextView android:maxHeight="10sp"/>
+	<TableRow>
+		<TextView android:layout_width="30sp"/>
+		<Spinner  
+			  android:id="@+id/currency_spinner_news" 
+		      android:prompt="@string/currency_prompt"
+		      android:layout_width="wrap_content"/>	
+		<TextView android:layout_width="30sp"/>
+	</TableRow>
+	
+	<TextView android:maxHeight="2sp"/>	
+	<TextView android:background="#ffffff" android:maxHeight="5sp"/>	
+</TableLayout>	

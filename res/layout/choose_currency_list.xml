@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent" 
+                android:layout_height="fill_parent"
+                android:shrinkColumns="0"
+                android:stretchColumns="1">
+   <TableRow
+   		android:background="#181818"
+   		android:padding="5sp"> 
+   
+       
+   <ImageButton 
+			android:src="@drawable/settings_edit"
+			android:layout_gravity="center_vertical"
+			android:paddingLeft="5sp"
+			android:scaleType="centerInside"
+			android:background="@null"/> 	
+			 	       
+   <TextView
+   			android:textSize="22sp"
+   			android:textColor="#FFFFFF"
+   			android:height="40sp"
+   			android:text="Edit Currency List"
+   			android:layout_gravity="center_vertical"
+   			android:paddingLeft="20sp"/>
+   </TableRow>
+                
+   <TableRow android:layout_weight="1">
+
+   <ScrollView
+   			android:layout_span="2">
+   <TableLayout 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content"
+                android:shrinkColumns="1"
+                android:stretchColumns="*"
+                android:id="@+id/categoryQuickSetupList">
+                
+<!--       <TableRow> 
+           <TextView
+           			android:padding="10sp"
+           			android:background="#FFFFFF"
+           			android:textColor="#181818"
+           			android:text="hello world"
+           			android:textSize="22sp"/>
+           <TextView/>
+        
+           <CheckBox 
+           			android:background="#ffffff"
+           			android:gravity="right"/>
+           
+           	
+           </TableRow>
+           <TextView 
+           			android:maxHeight="1sp"
+           			android:background="#C0C0C0"/>
+	-->
+
+   </TableLayout>
+   
+   </ScrollView>
+   
+   </TableRow>
+
+   
+   <TableRow>
+   <TableLayout
+   				android:layout_width="fill_parent" 
+                android:layout_height="fill_parent"
+                android:stretchColumns="*"
+                android:layout_span="2">
+   		<TableRow
+   			android:background="#bebebe"
+   			android:paddingTop="5sp"
+   			android:paddingBottom="5sp">
+	    <Button android:id="@+id/category_quick_ok" 
+	            android:layout_height="wrap_content"
+	            android:text="OK" />
+	
+	    <Button android:id="@+id/category_quick_cancel" 
+	            android:layout_height="wrap_content"
+	            android:text="Cancel" />
+		</TableRow>
+	</TableLayout>
+	
+	</TableRow>
+
+</TableLayout>

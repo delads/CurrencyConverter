@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:admobsdk="http://schemas.android.com/apk/res/com.pocketools.currency"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:scrollbars="none"
+		android:background="@drawable/gradient_reverse">	
+
+    
+    <TableLayout
+    	android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:stretchColumns="*"
+		android:shrinkColumns="*"
+		android:padding="5sp"
+		android:background="@drawable/gradient_reverse">
+		
+		
+		<TableRow>
+			<TextView android:height="5sp"/>
+		</TableRow>
+		
+		
+		<TextView
+				android:text="Add Exact Currency Symbol (eg EUR for Euro)"
+				android:textColor="#ffffff"
+				android:textSize="14sp"
+				android:paddingTop="5sp"
+				android:paddingBottom="5sp"/>	
+
+		<TableRow>					
+		<EditText 
+			android:id="@+id/add_stock_search"
+			android:hint="Symbol   "/>
+		<Button android:text="Add"
+			android:id="@+id/add_stock_search_image"/>
+		</TableRow>
+
+
+		<TextView android:height="20sp"/>
+        
+        <TextView 
+        android:id="@+id/user_message"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:padding="2sp"/>
+        
+        <TextView android:height="20sp"/>
+        
+        
+        <TableRow>
+			<TextView 
+				android:padding="2sp"
+				android:height="1sp"
+				android:background="#646D7E"
+				android:layout_span="2"/>
+		</TableRow>
+		
+		
+		<TextView android:height="20sp"/>
+        
+        <TextView 
+        android:id="@+id/currency_symbol_lookup"
+        android:clickable="true"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:text="Don't know your Currency Symbol ? Click here !"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:padding="2sp"/>
+		
+    </TableLayout>
+    
+   	
+              
+
+</LinearLayout>

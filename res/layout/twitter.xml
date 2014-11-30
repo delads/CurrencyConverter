@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical">	
+		
+    
+
+
+ 
+    	  			 
+    <com.mopub.mobileads.MoPubView
+        android:id="@+id/twitter_banner"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="50dp"/>
+    
+    	  
+    
+    <ListView
+	    android:id="@id/android:list"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:drawSelectorOnTop="false"
+	   android:layout_above="@id/twitter_banner" 
+	    android:layout_alignParentTop="true"
+	    android:descendantFocusability="afterDescendants"/>
+    
+        		<com.twitter.sdk.android.core.identity.TwitterLoginButton
+	        android:id="@+id/twitter_login_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:layout_above="@id/twitter_banner"
+	        android:layout_marginBottom="160sp"/>
+
+        
+</RelativeLayout>
+
+
+			              
+        				
+

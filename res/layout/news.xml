@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical"
+		android:background="#efefef">	
+
+		
+	<TableLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:stretchColumns="*"
+			android:shrinkColumns="*"
+			android:layout_marginLeft="10sp"
+    		android:layout_marginRight="10sp"
+    		android:layout_marginTop="10sp"
+    		android:layout_marginBottom="0sp">
+			
+			
+
+		
+	
+			<TableRow 
+					android:layout_weight="1"
+					android:id="@+id/company_news_row">
+					
+				<ListView android:id="@android:id/list" 
+						  android:layout_width="fill_parent" 
+			              android:layout_height="fill_parent"   
+			              android:drawSelectorOnTop="false"
+			              android:divider="@null"/>  
+		    </TableRow>
+		    
+		    
+		    <TableRow 
+		    		android:id="@+id/company_info_animation" 
+		    		android:gravity="center_horizontal"
+		    		android:layout_weight="1">
+		
+			<TableLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:stretchColumns="0,2">
+				<TableRow>
+					<TextView/>
+					<ImageView
+						android:id="@+id/company_info_loading"
+						android:scaleType="centerInside"
+			            android:layout_width="40dip"
+			            android:layout_height="40dip" />
+					<TextView/>
+				</TableRow>
+			</TableLayout>
+		
+		</TableRow>
+
+
+	              
+	    	<!--  
+		    <com.google.ads.GoogleAdView
+		        android:id="@+id/adview_news"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"/>
+		    -->
+		    <!--  
+		     <LinearLayout android:id="@+id/news_adwhirl_layout"
+		     	android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"/>
+		        -->
+		        
+		   <TableRow>
+		    <com.mopub.mobileads.MoPubView
+	        android:id="@+id/mopub_sample_ad"
+	        android:layout_height="50dp"
+	        android:layout_width="wrap_content"
+	        android:background="#ffffff"/>
+	   	    </TableRow>
+
+	    </TableLayout>
+</LinearLayout>
+
+    
+    <!--  
+    </TableRow>
+    
+    </TableLayout>
+    -->
+    
+    
+    <!--  
+    <TableLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+   
+		   
+		
+	
+	
+				
+	</TableLayout>
+	-->
+	
+	
+	<!--  
+	 
+	<TableLayout
+    		android:layout_height="wrap_content"
+    		android:layout_width="fill_parent"
+    		android:background="#ffffff"
+    		android:layout_margin="0sp">
+    		
+    	
+    	<TableRow >
+		    <com.google.ads.GoogleAdView
+		        android:id="@+id/adview_news"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" 
+		        android:layout_span="3"/>
+        
+        </TableRow>
+    </TableLayout>
+    -->

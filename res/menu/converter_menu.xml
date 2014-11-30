@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_refresh_rates"
+          android:icon="@drawable/refresh_old"
+          android:title="Refresh Rates"
+          android:showAsAction="always"/>
+    <item android:id="@+id/menu_add_currency"
+          android:icon="@drawable/edit"
+          android:title="Add Currency"
+          android:showAsAction="always" />
+</menu>

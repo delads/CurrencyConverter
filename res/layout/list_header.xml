@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout  
+			android:layout_span="3" 
+			android:layout_width="fill_parent"
+			android:stretchColumns="1"
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			android:id="@+id/list_header_content">					
+	<TableRow
+			android:background="@drawable/gradient_reverse">
+		<!-- 
+		<ImageButton 
+				android:src="@drawable/back"
+				android:id="@+id/back_button"
+				android:layout_gravity="center_vertical"
+				android:paddingLeft="5sp"
+				android:scaleType="centerInside"
+				android:background="@null"/>
+		-->
+		<TextView/>
+												
+    	<TextView android:height="50sp"
+    			android:textSize="20sp"
+    			android:textStyle="bold"
+    			android:gravity="center"
+    			android:id="@+id/currency_list_heading"
+    			android:textColor="#FFFFFF"/>
+       
+       <ImageButton 
+				android:src="@drawable/edit"
+				android:id="@+id/edit_base_button"
+				android:layout_gravity="center_vertical"
+				android:paddingRight="10sp"
+				android:background="@null"/>
+				
+	   </TableRow>
+	 </TableLayout>

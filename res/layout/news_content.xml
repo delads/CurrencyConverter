@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<TableLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"												
+   	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:stretchColumns="1"
+	android:paddingLeft="5sp"
+	android:paddingRight="5sp"
+	android:background="#ffffff">
+		
+	<TextView
+		android:id="@+id/news_heading"
+		android:textColor="#0000FF"
+		android:text="Euro worst to come, top analysts say"/>
+		
+		<TextView
+		android:id="@+id/news_source"
+		android:textColor="#2B547E"
+		android:text="(Marketwatch)"/>
+		
+		<TextView android:maxHeight="5sp"/>
+		
+		<TextView
+		android:id="@+id/news_summary"
+		android:textColor="#000000"
+		android:text="This is the first part of the story This is the first part of the story This is the first part of the story This is the first part of the story"/>
+		
+		<TextView android:maxHeight="5sp"/>
+		
+		<TextView
+		android:id="@+id/news_freshness"
+		android:textColor="#0000FF"
+		android:text="6 hours ago"/>
+		
+		<TextView android:maxHeight="1sp"
+			android:background="#000000"/>
+
+	<TextView android:height="5sp"/>
+</TableLayout>  

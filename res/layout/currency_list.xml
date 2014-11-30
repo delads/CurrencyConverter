@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#ffffff">
+
+		  			
+	<TableLayout
+		    android:stretchColumns="0,2"
+    		android:shrinkColumns="*"
+    		android:layout_height="wrap_content"
+    		android:layout_width="fill_parent"
+    		android:background="#ffffff"
+    		android:layout_margin="0sp">	
+    		
+    		
+    	<Gallery
+		    android:id="@+id/gallery_portfolio"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="#000000"/>
+		    
+	</TableLayout>
+	 
+	<ListView android:id="@android:id/list" 
+			  android:layout_width="fill_parent" 
+              android:layout_height="fill_parent" 
+              android:layout_weight="1" 
+              android:drawSelectorOnTop="false"
+              android:divider="@null"/>  
+              
+    
+    	<TableLayout
+		    android:stretchColumns="0,2"
+    		android:shrinkColumns="*"
+    		android:layout_height="wrap_content"
+    		android:layout_width="fill_parent"
+    		android:background="#ffffff"
+    		android:layout_margin="0sp">
+    		
+    	
+    	<TableRow >
+   	   		 <!-- GoogleAdView -->
+   	   		 <!--  
+		    <com.google.ads.GoogleAdView
+		        android:id="@+id/adview_currency_list"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" 
+		        android:layout_span="3"/>
+		     -->
+		     
+		     
+		      <TableLayout android:id="@+id/list_adwhirl_layout"
+		     	android:layout_width="fill_parent"
+		        android:layout_height="wrap_content" 
+		        android:layout_span="3"
+		        android:gravity="center"/>
+		        
+        
+        </TableRow>
+    		
+    	<TableRow>	
+			<TableLayout 
+	    			android:layout_span="3"
+	    			android:background="#ffffff">
+	    		
+	    		<TextView android:textSize="12sp"
+			    			android:id="@+id/xrate_list_update_message"
+			    			android:gravity="center"
+			    			android:paddingLeft="10sp"
+			    			android:background="#000000"
+			    			android:textColor="#ffffff"/>
+	   	    </TableLayout>	    
+	   	    
+		 </TableRow>
+	</TableLayout>         
+   
+
+</LinearLayout>

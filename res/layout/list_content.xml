@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<TableLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/list_content"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:stretchColumns="*"
+		android:paddingLeft="10sp"
+		android:paddingRight="10sp"
+		android:paddingTop="5sp"
+		android:paddingBottom="10sp"
+		android:background="#e3eef6">
+
+	<TableRow android:id="@+id/currencyRateRow">	
+	<TextView
+		android:id="@+id/currencyName"
+		android:textSize="22sp"
+		android:textStyle="normal"
+		android:width="140dip"
+		android:textColor="#151B54"/>
+		
+	<TextView
+		android:id="@+id/currencyRate"
+		android:textSize="22sp"
+		android:textStyle="normal"
+		android:gravity="left"
+		android:textColor="#151B54"
+		android:layout_gravity="right"/>
+	 
+	 <!-- 
+	<ImageButton 
+			android:src="@drawable/chart"
+			android:id="@+id/chart_button_list"
+			android:layout_gravity="right"
+			android:paddingRight="10sp"
+			android:background="@null"/>
+	-->
+
+	
+	</TableRow>
+	<TableRow>
+ 
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/currency_inverse"
+		android:textSize="13sp"
+		android:textColor="#2B547E"/>
+		
+	</TableRow>
+	
+	<TextView android:background="@drawable/gradient"
+				android:maxHeight="1sp"
+				android:paddingTop="5sp"/>
+	
+</TableLayout>

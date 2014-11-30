@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_height="fill_parent"
+    			android:layout_width="fill_parent"
+    			android:background="#efefef">
+    			
+	<TableLayout
+		    android:stretchColumns="*"
+    		android:shrinkColumns="*"
+    		android:layout_height="fill_parent"
+    		android:layout_width="fill_parent"
+    		android:layout_marginLeft="10sp"
+    		android:layout_marginRight="10sp"
+    		android:layout_marginTop="10sp"
+    		android:layout_marginBottom="0sp">
+     
+	        
+	        
+		<TableRow>  // The main TableRow of the view
+		
+			//Start of first Section
+
+	
+					<TableLayout android:layout_marginLeft="0sp"
+									android:layout_marginRight="0sp"
+									android:layout_marginTop="0sp"
+									android:background="#ffffff"
+									android:stretchColumns="*"
+    								android:shrinkColumns="*">
+					
+						<TableRow>					  
+						<Spinner  
+								  android:id="@+id/currency_spinner_base" 
+							      android:prompt="@string/currency_prompt"
+							      android:layout_width="wrap_content"/>							      
+						</TableRow>
+						
+						<!--  
+						<TextView android:text="Enter Amount"
+									android:textSize="14sp"
+									android:textColor="#ffffff"
+									android:paddingTop="3sp"/>
+									-->
+									
+						<TextView/>
+						<TableRow>					
+						<EditText
+								  android:id="@+id/currency_left_text"
+								  android:text="1"
+								  android:inputType="phone"
+								  android:cursorVisible="true"
+								  android:gravity="left"/>
+						</TableRow>					
+					</TableLayout>	
+
+			
+			//End of first Section
+			
+			//Start of "=" Section
+
+			<TableLayout android:background="#ffffff"
+			    android:layout_height="fill_parent"
+			    android:layout_width="wrap_content">
+			<TextView/>
+			<TextView/>
+			<TableRow android:gravity="center">
+				<ImageView 
+				android:src="@drawable/refresh"
+				android:id="@+id/button_swap_currency"
+				android:scaleType="fitCenter"
+	            android:layout_width="40dip"
+	            android:layout_height="40dip"
+	            android:layout_gravity="center"/>
+				</TableRow>
+			</TableLayout>
+			
+			//End of "=" Section
+			
+			
+			//Start of thrid Section
+	
+
+					<TableLayout android:layout_marginLeft="0sp"
+									android:layout_marginRight="0sp"
+									android:layout_marginTop="0sp"
+									android:stretchColumns="*"
+    								android:shrinkColumns="*"
+									android:background="#ffffff">
+						
+						<TableRow>
+						<Spinner  
+								  android:id="@+id/currency_spinner_new"
+							      android:prompt="@string/currency_prompt"
+							      android:layout_width="wrap_content"/>						
+						</TableRow>
+						<!-- 
+						<TextView android:text="Enter Amount"
+									android:textSize="14sp"
+									android:textColor="#ffffff"
+									android:paddingTop="3sp"/>
+							
+							-->
+					<TextView/>
+						<TableRow>
+					<EditText
+									  android:id="@+id/currency_right_text"
+									  android:inputType="phone"
+									   android:cursorVisible="true"
+									  android:gravity="left"/>
+					</TableRow>
+					</TableLayout>	
+
+			
+			
+			//End of Third Section	
+		</TableRow> 
+		
+		 
+	   					
+		<TextView android:background="@android:color/white"/>
+
+
+	    		
+	    <TableRow android:id="@+id/timeframeRowMain">
+	        
+	        <TextView android:textSize="12sp"
+	    		    android:layout_span="3"
+					android:text="1d 5d 3m 2y 5y"
+					android:background="@color/tw__solid_white"/>
+	    </TableRow>
+	    
+	    <TextView android:background="@color/tw__solid_white"/>
+
+	    
+	     <TableRow android:id="@+id/graph_animation">
+			<TableLayout
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_span="3"
+				android:stretchColumns="0,2">
+				<TextView android:height="30sp"/>
+				<TableRow>
+				<TextView android:layout_height="30sp"/>
+				<ImageView
+					android:id="@+id/graph_loading"
+					android:layout_gravity="center_vertical"
+					android:scaleType="centerInside"
+			        android:layout_width="40dip"
+			        android:layout_height="40dip" />
+				<TextView/>
+				</TableRow>
+			</TableLayout>
+		</TableRow>
+		
+
+
+
+
+   	    
+   	    
+   	    
+   	    <TableRow android:layout_weight="1">
+
+	    		
+	    		<ImageButton 
+	    		    android:layout_span="3"
+	    				android:layout_weight="1"
+	    				android:drawSelectorOnTop="false"
+	   					android:id="@+id/graph_button"
+	   					android:background="#ffffff"
+	   					android:scaleType="fitXY"
+	   					android:layout_width="fill_parent"
+		        		android:layout_height="fill_parent"/>
+    
+   	    </TableRow>	
+   	    
+   	    
+
+      
+   	       	    <TableRow>
+	    		
+	    		<TextView android:textSize="12sp"
+	    		    android:layout_span="3"
+			    			android:id="@+id/xrate_update_message"
+			    			android:gravity="center"
+			    			android:background="#ffffff"
+			    			android:textColor="#000000"/>
+    
+   	    </TableRow>	
+   	    
+   	       	       	    <TableRow>
+	    <com.mopub.mobileads.MoPubView
+	        android:layout_span="3"
+        android:id="@+id/mopub_sample_ad"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"/>
+   	    </TableRow>
+		    																
+	</TableLayout>
+	
+	
+
+</LinearLayout>
+	

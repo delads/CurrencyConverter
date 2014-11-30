@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout  
+			android:layout_span="3" 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:stretchColumns="0"
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			android:id="@+id/list_header_content">					
+<TableRow>
+	    
+	    <AutoCompleteTextView
+      android:id="@+id/autoComplete"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:layout_weight="1"
+      android:ems="8" 
+      android:hint="choose another city"
+      android:textColorHint="@color/abc_search_url_text_holo"
+      />
+
+	    <ImageButton 
+	        android:src="@drawable/abc_ic_search_api_holo_light"
+	        android:layout_gravity="center_vertical"
+	        android:id="@+id/city_search_button"/>
+	    
+	    </TableRow>
+	    
+	<TableRow>
+	    <TextView android:text="images from current location" 
+	        		android:textColor="@color/abc_search_url_text_selected"
+	        		android:id="@+id/switch_text"
+	        		android:textSize="18sp"
+	        		android:paddingLeft="10sp"
+	        		android:paddingTop="10sp"
+	        		android:paddingBottom="20sp"/>
+	    
+	    <Switch android:enabled="true"
+	        android:id="@+id/local_search_switch"/>	
+	        
+	        </TableRow>
+
+	 </TableLayout>
+	 
+
+    
+
+		
+    
